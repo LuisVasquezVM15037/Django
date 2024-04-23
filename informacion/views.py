@@ -4,4 +4,8 @@ from django.http import HttpResponse
 # Create your views here.
 def inicio(request):
     return HttpResponse("<h1>BIENVENIDO </h1>")
+
+
+def nosotros(request):
+    return render(request, 'paginaweb/nosotros.html')
     
