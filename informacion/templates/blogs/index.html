@@ -1,0 +1,54 @@
+
+{% extends "base.html" %}
+    
+
+    {%  block titulo %} listas de los opiniones {% endblock %}
+
+    
+    {%  block contenido  %} 
+    <div class="card">
+        <div class="card-header">lista blogs</div>
+        <div class="card-body">
+            <h4 class="card-title">blog</h4>
+            <div
+                class="table-responsive"
+            >
+                <table
+                    class="table table-primary"
+                >
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">titulo</th>
+                            <th scope="col">imagen</th>
+                            <th scope="col">descripcion</th>
+                            <th scope="col">acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>1</td>
+                            <td>OPINION</td>
+                            <td>IMAGEN</td>
+                            <td>es valido</td>
+                            <td>editar i borrar</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            
+        </div>
+        <div class="card-footer text-muted"></div>
+    </div>
+    
+    
+    {% endblock %}
+
+
+
+
+
+
