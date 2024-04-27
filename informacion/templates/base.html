@@ -24,14 +24,14 @@
         <!--barra de navegacion-->
 <nav class="navbar navbar-expand navbar-light bg-light">
     <div class="nav navbar-nav">
-        <a class="nav-item nav-link active" href="#" aria-current="page">inicio</a>
-        <a class="nav-item nav-link" href="#">2023</a>
-        <a class="nav-item nav-link" href="#">2022</a>
-        <a class="nav-item nav-link" href="#">2021</a>
-        <a class="nav-item nav-link" href="#">2020</a>
-        <a class="nav-item nav-link" href="#">2019</a>
-        <a class="nav-item nav-link" href="#">nosotros</a>
-        <a class="nav-item nav-link" href="#">blogs</a>
+        <a class="nav-item nav-link active" href="{% url 'inicio'  %}" aria-current="page">inicio</a>
+        <a class="nav-item nav-link" href="{% url 'inicio2'  %}">2023</a>
+        <a class="nav-item nav-link" href="{% url 'inicio'  %}">2022</a>
+        <a class="nav-item nav-link" href="{% url 'inicio'  %}">2021</a>
+        <a class="nav-item nav-link" href="{% url 'inicio'  %}">2020</a>
+        <a class="nav-item nav-link" href="{% url 'inicio'  %}">2019</a>
+        <a class="nav-item nav-link" href="{% url 'nosotros'  %}">nosotros</a>
+        <a class="nav-item nav-link" href="{% url 'blogs'  %}">blogs</a>
 
     </div>
 </nav>
