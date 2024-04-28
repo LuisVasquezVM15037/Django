@@ -5,6 +5,13 @@
 
     
     {%  block contenido  %} 
-    formulario para editar
+    <div class="card">
+        <div class="card-header">editar blogs</div>
+        <div class="card-body">
+            <h4 class="card-title">datos del blog</h4>
+        {% include 'blogs/formulario.html' %}
+            
+        </div>
+    </div>
     
     {% endblock %}

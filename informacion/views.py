@@ -20,8 +20,8 @@ def blogs(request):
 def crear_blogs(request):
     return render(request, 'blogs/crear.html')    
     
-    
-    
+def editar(request):
+    return render(request, 'blogs/editar.html')      
     
     
     
