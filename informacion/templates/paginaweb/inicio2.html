@@ -1,56 +1,38 @@
-<!--agregar la informacion de esta pagina que es el inicio-->
 {% extends "base.html" %}
-    
+{% block titulo %} Inicio {% endblock %}
+{% block contenido %}
 
-    {%  block titulo %} Inicio {% endblock %}
+<div class="p-5 mb-4 bg-light rounded-3">
+  <img src=" static/images/trafico.gif " alt="Mi " width="100%" height="200px" />
+  <div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold">INFORMACION DEL TRAFICO EN EL SALVADOR 2023</h1>
+  </div>
+</div>
 
-    
-    {%  block contenido  %} 
-    
-    <div class="p-5 mb-4 bg-light rounded-3">
-        <img src=" static/images/trafico.gif " alt="Mi " width="100%" height="200px">
-        <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold">INFORMACION DEL TRAFICO EN EL SALVADOR 2023</h1>
-          <!--  <img src="my_app/copia.jpg" alt="My image"> 
-          
-
-          <!-- 
-          <p class="lead">empezar agregar informacion</p>
-            <button class="btn btn-primary btn-lg" type="button">
-               
-               empezar
-            </button>
-            -->
-        </div>
+<main class="container my-5">
+  <section class="row">
+    <div class="col-md-6">
+      <h2>Informacion</h2>
+      <p>Al término de 2023, un total de 11,015 personas sufrieron lesiones en accidentes de tránsito y esta es la cifra más alta desde 2015, a pesar que ahora ocurren menos siniestros viales que hace ocho años, indican las estadísticas del gubernamental Observatorio Nacional de Seguridad Vial (ONASEVI).</p>
+      <p>El ONASEVI, citando datos de la Policía Nacional Civil, reportó 18,463 accidentes viales entre el 1 de enero y el 31 de diciembre de 2023. En comparación con 2022 hubo 1,055 incidentes más, es decir, un aumento anual del 6.1 %.</p>
+      <p>No obstante, las estadísticas históricas del Observatorio indican que los accidentes se han reducido en los últimos años. En 2015 se contabilizaron 22,299 casos, de manera que las cifras reportadas al cierre de 2023 son 17 % inferiores a las de hace ocho años. Respecto a 2016, la brecha es incluso más amplia, ya que en ese año hubo 22,958 accidentes, por lo que el dato de 2023 es 19 % menor.</p>
+      <p>Pese a esa reducción, la cantidad de lesionados alcanzó, el año pasado, el punto más alto desde 2015. El ONASEVI reportó 11,015 heridos en accidentes de tránsito, 6.1 % más que en 2022 y una cifra superior a cualquier otra registrada en los ocho años anteriores. Para el caso, en 2015 y 2016, cuando las autoridades atendieron más de 22,000 accidentes, se reportaron 9,466 y 9,996 lesionados, respectivamente. El dato de 2023 incluso superó a los 10,961 de 2019, que era hasta 2022 la cifra más alta del periodo analizado.</p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
     </div>
+    <div class="col-md-6">
+      <h2>Sección 2</h2>
+      <p>Otra sección para agregar más contenido.</p>
+    </div>
+  </section>
+</main>
 
-    <main class="container my-5">
-        <section class="row">
-          <div class="col-md-6">
-            <h2>Informacion </h2>
-            <p>Al término de 2023, un total de 11,015 personas sufrieron lesiones en accidentes de tránsito y esta es la
-                 cifra más alta desde 2015, a pesar que ahora ocurren menos siniestros viales que hace ocho años, 
-                 indican las estadísticas del gubernamental Observatorio Nacional de Seguridad Vial (ONASEVI).</p>
-                 <P>El ONASEVI, citando datos de la Policía Nacional Civil, reportó 18,463 accidentes viales entre el 
-                    1 de enero y el 31 de diciembre de 2023. En comparación con 2022 hubo 1,055 incidentes más, es decir, 
-                    un aumento anual del 6.1 %.</p>
-          </div>
-          <div class="col-md-6">
-            <h2>Sección 2</h2>
-            <p>Otra sección para agregar más contenido.</p>
-          </div>
-        </section>
-      </main>
-    
-      <footer class="bg-light py-3">
-        <div class="container">
-          <p class="text-center mb-0">&copy; 2023 Mi Página. Todos los derechos reservados.</p>
-        </div>
-      </footer>
+<footer class="bg-light py-3">
+  <div class="container">
+    <p class="text-center mb-0">&copy; 2023 Mi Página. Todos los derechos reservados.</p>
+  </div>
+</footer>
 
-      
-
-
-
-
-    {% endblock %}
+{% endblock %}
