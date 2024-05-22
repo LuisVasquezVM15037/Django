@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% block titulo %} Inicio {% endblock %}
 {% block contenido %}
-
+{% if request.user.is_authenticated%}
+ <h1>{{user.username | upper}}, bienvenido</h1>
+ {% endif %}
 <div class="p-5 mb-4 bg-light rounded-3">
   <img src=" static/images/trafico.gif " alt="Mi " width="100%" height="200px" />
   <div class="container-fluid py-5">

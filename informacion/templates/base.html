@@ -33,6 +33,14 @@
         <a class="nav-item nav-link" href="{% url 'nosotros'  %}">nosotros</a>
         <a class="nav-item nav-link" href="{% url 'blogs'  %}">blogs</a>
 
+      <!--validar -->
+{% if request.user.is_authenticated %}
+    <a class="nav-item nav-link" href="{% url 'exit' %}">Salir</a>
+{% else %}
+    <a class="nav-item nav-link" href="{% url 'login' %}">Ingresar</a>
+{% endif %}
+
+
     </div>
 </nav>
 

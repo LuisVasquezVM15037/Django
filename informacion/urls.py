@@ -1,6 +1,7 @@
 #crear mi rutas
 from django.urls import path
 from . import views
+from .views import exit
 
 urlpatterns = [
     #inicio es el nombre de la ruta
@@ -11,6 +12,9 @@ urlpatterns = [
     path('blogs',views.blogs, name='blogs'),
     path('crear_blogs',views.crear_blogs, name='crear'),
     path('editar',views.editar, name='editar'),
+    path('logout/',exit, name='exit'),
+
+   
 ]
 
 
