@@ -20,6 +20,10 @@ def tra2023(request):
 def tra2022(request):
     return render(request, 'paginaweb/tra2022.html')
 
+def tra2021(request):
+    return render(request, 'paginaweb/tra2021.html')
+
+
 
 
 
