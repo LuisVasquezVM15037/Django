@@ -12,6 +12,7 @@ urlpatterns = [
     path('tra2023',views.tra2023, name='tra2023'),
     path('tra2022',views.tra2022, name='tra2022'),
     path('tra2021',views.tra2021, name='tra2021'),
+    path('tra2020',views.tra2020, name='tra2020'),
     
     
 
