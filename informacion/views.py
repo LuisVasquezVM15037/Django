@@ -17,6 +17,22 @@ def inicio2(request):
 def tra2023(request):
     return render(request, 'paginaweb/tra2023.html')
 
+def tra2022(request):
+    return render(request, 'paginaweb/tra2022.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def nosotros(request):
     return render(request, 'paginaweb/nosotros.html')
 
