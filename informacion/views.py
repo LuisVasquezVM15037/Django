@@ -13,6 +13,9 @@ def inicio(request):
 def inicio2(request):
     return render(request, 'paginaweb/inicio2.html')
 
+#  #aqui van las demas 2023,2022,2021,2020
+def tra2023(request):
+    return render(request, 'paginaweb/tra2023.html')
 
 def nosotros(request):
     return render(request, 'paginaweb/nosotros.html')
