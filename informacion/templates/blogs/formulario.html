@@ -1,12 +1,20 @@
 <form encyte="multipart/form-data" method="post">
+    {% csrf_token %}
+    {%for campo in formulario%}
 
     <div class="mb-3">
-        <label for="" class="form-label">nombre: </label>
-        <input type="text" class="form-control" name="" id="" 
-        aria-describedby="helpId" placeholder="nombre"/>
+        <label for="" class="form-label">{{campo.label }}: </label>
+        <input type="{{campo.field.widget.input_type}}" class="form-control" name="{{campo.name}}" id="" 
+        aria-describedby="helpId" placeholder="{{campo.label }}"/>
 
     </div>
+    <div class="col-12 help-text">{{campo.errors}}</div>    
 
+    {% endfor%}
+
+    <a class="btn btn-secondary  btn-lg" href="{% url 'blogs'  %}"> atras</a>
+    <input class="btn btn-success" type="submit"  value="enviar comentario"/>
+    
 </form>
 
 

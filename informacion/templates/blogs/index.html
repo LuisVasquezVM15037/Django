@@ -1,34 +1,25 @@
 {% extends "base.html" %} 
  {% block contenido %}
 
-
- <div class="container mt-5">
-    <h2 class="mb-4">Agregar Datos</h2>
-    <form id="addDataForm">
-        <div class="form-group">
-            <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
-        </div>
-        <div class="form-group">
-            <label for="apellido">Apellido</label>
-            <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Correo Electrónico</label>
-            <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Agregar</button>
-    </form>
-    
+<a href="{% url 'crear'  %}"> <button type="submit" class="btn btn-primary">Agregar</button></a>
     <div class="container mt-5">
         <h2 class="mb-4">Datos Agregados</h2>
         <table class="table table-bordered">
             <thead class="thead-dark">
                 <tr>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Apellido</th>
-                    <th scope="col">Correo Electrónico</th>
+                    <td>N°</td>
+                    <td>Nombre completo</td>
+                    <td >Correo electronico</td>
+                    <td >Descripcion</td>
                 </tr>
+                {% for personas in persona %}
+                <tr>
+                    <td>{{ personas.id}}</td>
+                    <td>{{ personas.nombre}}</td>
+                    <td >{{ personas.email}}</td>
+                    <td >{{ personas.descripcion}}</td>
+                </tr>
+                 {% endfor %}
             </thead>
             <tbody id="dataTable">
                 <!-- Aquí se insertarán los datos agregados -->
@@ -36,40 +27,9 @@
         </table>
     </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-    document.getElementById('addDataForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        
-        var nombre = document.getElementById('nombre').value;
-        var apellido = document.getElementById('apellido').value;
-        var email = document.getElementById('email').value;
-        
-        var table = document.getElementById('dataTable');
-        var newRow = table.insertRow();
-        
-        var cell1 = newRow.insertCell(0);
-        var cell2 = newRow.insertCell(1);
-        var cell3 = newRow.insertCell(2);
-        
-        cell1.textContent = nombre;
-        cell2.textContent = apellido;
-        cell3.textContent = email;
-        
-        // Limpiar el formulario
-        document.getElementById('addDataForm').reset();
-    });
-</script>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 
 {% endblock %}

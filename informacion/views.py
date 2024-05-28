@@ -3,6 +3,8 @@ from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 from django.shortcuts import redirect
+from .models import Persona
+from .forms import PersonaForm
 
 
 # Create your views here.
@@ -44,12 +46,19 @@ def nosotros(request):
     return render(request, 'paginaweb/nosotros.html')
 
 #paginas de blogs
-
+#mostras las personas que opinan
 def blogs(request):
-    return render(request, 'blogs/index.html')
+    persona = Persona.objects.all()
+
+    return render(request, 'blogs/index.html', {'persona': persona} )
     
+
 def crear_blogs(request):
-    return render(request, 'blogs/crear.html')    
+    formulario =PersonaForm(request.POST or None)
+    if formulario.is_valid():
+        formulario.save()
+        return redirect('blogs')
+    return render(request, 'blogs/crear.html',{'formulario': formulario})    
     
 def editar(request):
     return render(request, 'blogs/editar.html')    
