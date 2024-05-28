@@ -1,48 +1,42 @@
-<!--agregar la informacion de esta pagina que es el inicio-->
 {% extends "base.html" %} {% block titulo %} informacion {% endblock %} 
 {% block contenido %}
 
+<div class="p-4 mb-4 rounded-3 bg-primary text-white">
+    <img src="static/images/trafico.gif" alt="Tráfico" width="100%" height="200px">
+</div>
 
-<div class="p-4 mb-4  rounded-3">
-
-        <img src=" static/images/trafico.gif " alt="Mi " width="100%" height="200px" />
-
-  </div>
-
-
-
-<div class="p-2 mb-3 bg-light rounded-2">
+<div class="p-2 mb-3 bg-warning text-dark rounded-2">
   <div class="container-fluid py-5">
-    <h1 class="display-5 fw-bold">
-      INFORMACION DEL TRAFICO EN EL SALVADOR 2024
+    <h1 class="display-5 fw-bold">INFORMACIÓN DEL TRÁFICO EN EL SALVADOR 2024</h1>
   </div>
 </div>
 
 <main class="container my-5">
-    <section class="row">
-      <!--2024-->
-      <div class="col-md-6">
-        <h2>noticias</h2>
+  <section class="row">
+    <!-- Noticias 2024 -->
+    <div class="col-md-6 mb-4">
+      <div class="bg-light p-3 rounded shadow-sm">
+        <h2 class="text-danger">Noticias</h2>
         <p>Los accidentes de tráfico aumentaron un 12,6 % en lo que va de año en El Salvador en comparación con el mismo periodo de 2023, unos siniestros que además causaron un 6 % más de muertes, de acuerdo con datos oficiales consultados este lunes por EFE.
-
-            Según las estadísticas del Observatorio Nacional de Seguridad Vial del Gobierno de El Salvador, entre el 1 de enero y el 17 de marzo se contabilizan 4.164 percances viales frente a los 3.600 registrados en el mismo lapso de tiempo el año pasado, con una diferencia de 465 casos.
-            
-            El promedio diario de accidentes en este año es de 54 casos, 6 más que entre enero y marzo del año pasado, de acuerdo con las estadísticas.
-            
-            Estos datos también indican un aumento en las muertes atribuidas a esta causa, pasando de 265 el año pasado a 281 en el presente, una diferencia de 16 fallecidos más.</p>
-<p id="output"></p>
+          Según las estadísticas del Observatorio Nacional de Seguridad Vial del Gobierno de El Salvador, entre el 1 de enero y el 17 de marzo se contabilizan 4.164 percances viales frente a los 3.600 registrados en el mismo lapso de tiempo el año pasado, con una diferencia de 465 casos.
+          El promedio diario de accidentes en este año es de 54 casos, 6 más que entre enero y marzo del año pasado, de acuerdo con las estadísticas.
+          Estos datos también indican un aumento en las muertes atribuidas a esta causa, pasando de 265 el año pasado a 281 en el presente, una diferencia de 16 fallecidos más.
+        </p>
       </div>
-            <!--2024-->
-        <div class="col-md-6">
-         <h2>estadisitica</h2>
-         <p>San Salvador, 18 mar (EFE).- Los accidentes de tráfico aumentaron un 12,6 % en lo que va de año en El Salvador en comparación con el mismo periodo de 2023, unos siniestros que además causaron un 6 % más de muertes, de acuerdo con datos oficiales consultados este lunes por EFE. Según las estadísticas del Observatorio Nacional de Seguridad Vial del Gobierno de El Salvador, entre el 1 de enero y el 17 de marzo se contabilizan 4.164 percances viales frente a los 3.600 registrados en el mismo lapso de tiempo el año pasado, con una diferencia de 465 casos. </p>
-         <img src=" static/images/esta.png " alt="Mi " width="100%" height="900" />
-         </div> 
-
-<a  href="https://www.swissinfo.ch/spa/suben-un-12-%25-los-accidentes-de-tr%C3%A1fico-en-el-salvador-en-2024%2C-con-un-6-%25-m%C3%A1s-de-muertes/73876864">mas informacion</a>
-    </section>
-  </main>
-
+    </div>
+    <!-- Estadísticas 2024 -->
+    <div class="col-md-6 mb-4">
+      <div class="bg-light p-3 rounded shadow-sm">
+        <h2 class="text-success">Estadísticas</h2>
+        <p>San Salvador, 18 mar (EFE).- Los accidentes de tráfico aumentaron un 12,6 % en lo que va de año en El Salvador en comparación con el mismo periodo de 2023, unos siniestros que además causaron un 6 % más de muertes, de acuerdo con datos oficiales consultados este lunes por EFE. Según las estadísticas del Observatorio Nacional de Seguridad Vial del Gobierno de El Salvador, entre el 1 de enero y el 17 de marzo se contabilizan 4.164 percances viales frente a los 3.600 registrados en el mismo lapso de tiempo el año pasado, con una diferencia de 465 casos.</p>
+        <img src="static/images/esta.png" alt="Estadísticas" class="img-fluid rounded">
+      </div>
+    </div>
+    <div class="col-12 text-center">
+      <a href="https://www.swissinfo.ch/spa/suben-un-12-%25-los-accidentes-de-tr%C3%A1fico-en-el-salvador-en-2024%2C-con-un-6-%25-m%C3%A1s-de-muertes/73876864" class="btn btn-info">Más información</a>
+    </div>
+  </section>
+</main>
 
 <footer class="bg-light py-3">
   <div class="container">
