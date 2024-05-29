@@ -58,22 +58,34 @@
 
 <!--este es para guardar la informacion-->
         <script>
+            //2024
             document.getElementById('saveButton').addEventListener('click', function() {
                 const inputValue = document.getElementById('input1').value;
                 localStorage.setItem('sharedData', inputValue);
                 alert('Datos guardados');
-            });
+            });//fin 2024
+            //2023
+            document.getElementById('elvin2023').addEventListener('click', function() {
+                const inputValue = document.getElementById('input2').value;
+                localStorage.setItem('sharedData', inputValue);
+                alert('Datos guardados');
+            });//fin 2024            
+
+
           </script>
           <!--este es para mostrar la informacion-->
           <script>
+            //2024
             function updateOutput() {
                 document.getElementById('output').innerText = localStorage.getItem('sharedData') || '';
             }
-    
-    
-    
+            //2023
+            function updateOutput1() {
+                document.getElementById('output1').innerText = localStorage.getItem('sharedData') || '';
+            }
             // Optionally, load the data when the page loads
             updateOutput(); 
+            updateOutput1();
           </script>
           
         <script
