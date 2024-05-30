@@ -11,14 +11,24 @@
                     <td>Nombre completo</td>
                     <td >Correo electronico</td>
                     <td >Descripcion</td>
+                    <td >opcion</td>
                 </tr>
                 {% for personas in persona %}
                 <tr>
                     <td>{{ personas.id}}</td>
                     <td>{{ personas.nombre}}</td>
                     <td >{{ personas.email}}</td>
-                    <td >{{ personas.descripcion}}</td>
+                    <td >{{ personas.descripcion}}</td> 
+                  <td>{% if request.user.is_authenticated%}<a name="" id="" class="btn btn-danger" href="{% url 'eliminar' personas.id %}" role="button">eliminar</a></td>
+                    {% endif %}
                 </tr>
+
+
+
+
+
+
+
                  {% endfor %}
             </thead>
             <tbody id="dataTable">

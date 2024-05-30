@@ -20,6 +20,7 @@ urlpatterns = [
     path('blogs',views.blogs, name='blogs'),
     path('crear_blogs',views.crear_blogs, name='crear'),
     path('editar',views.editar, name='editar'),
+    path('eliminar/<int:id>',views.eliminar, name='eliminar'),
     path('logout/',exit, name='exit'),
 
    

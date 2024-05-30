@@ -63,6 +63,12 @@ def crear_blogs(request):
 def editar(request):
     return render(request, 'blogs/editar.html')    
 
+def eliminar(request, id):
+    #borrar es una variable creada que almacena el oibjeto
+    borrar = Persona.objects.get(id=id)
+    borrar.delete()
+    return redirect('blogs')
+
 def exit(request):
     logout(request)
     return redirect('inicio')  
