@@ -29,19 +29,6 @@ def tra2020(request):
     return render(request, 'paginaweb/tra2020.html')
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 def nosotros(request):
     return render(request, 'paginaweb/nosotros.html')
 
@@ -72,6 +59,9 @@ def eliminar(request, id):
 def exit(request):
     logout(request)
     return redirect('inicio')  
+
+def envivo(request):
+    return render(request, 'paginaweb/envivo.html')  
     
     
     

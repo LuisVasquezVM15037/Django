@@ -22,6 +22,7 @@ urlpatterns = [
     path('editar',views.editar, name='editar'),
     path('eliminar/<int:id>',views.eliminar, name='eliminar'),
     path('logout/',exit, name='exit'),
+    path('envivo',views.envivo, name='envivo'),
 
    
 ]
