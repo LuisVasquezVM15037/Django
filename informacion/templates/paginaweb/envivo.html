@@ -4,29 +4,46 @@
 
 <div class="p-2 mb-3 bg-warning text-dark rounded-2">
     <div class="container-fluid py-5">
-      <h1 class="display-5 fw-bold">TRAFICO EN VIVO</h1>
+      <h1 class="display-5 fw-bold">TRAFICO EN VIVO SAN SALVADOR</h1>
     </div>
   </div> 
-  <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
-    <script>
-        // Inicializar y añadir el mapa
-        function initMap() {
-            // Coordenadas de El Salvador
-            var elSalvador = {lat: 13.794185, lng: -88.89653};
 
-            // Crear el mapa centrado en El Salvador
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 10,
-                center: elSalvador
-            });
 
-            // Añadir la capa de tráfico al mapa
-            var trafficLayer = new google.maps.TrafficLayer();
-            trafficLayer.setMap(map);
-        }
-    </script>
 
-    <div id="map"></div>
+  <main class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <section class="bg-light p-3">
+                <h2>BULEVAR DEL EJERCITO</h2>
+                <a class="nav-item nav-link" style="color:#FF69B4" href="https://eltraficosv.com/newsite/"><img src="static/images/ejercito.jpg" alt="Estadísticas" class="img-fluid rounded" width='500px'></a>
+
+
+            </section>
+        </div>
+        <div class="col-md-3">
+            <section class="bg-light p-3">
+                <h2>BULEVAR CONSTITUCION</h2>
+                <a class="nav-item nav-link" style="color:#FF69B4" href="https://eltraficosv.com/newsite/"><img src="static/images/constitucion.jpg" alt="Estadísticas" class="img-fluid rounded" width='500px'></a>
+
+            </section>
+        </div>
+        <div class="col-md-3">
+            <section class="bg-light p-3">
+                <h2>CARRETERA LOS CHORROS</h2>
+                <a class="nav-item nav-link" style="color:#FF69B4" href="https://eltraficosv.com/newsite/"><img src="static/images/chorros.jpg" alt="Estadísticas" class="img-fluid rounded" width='500px'></a>
+
+            </section>
+        </div>
+        <div class="col-md-3">
+            <section class="bg-light p-3">
+                <h2>BULEVAR LOS HEROES</h2>
+                <a class="nav-item nav-link" style="color:#FF69B4" href="https://eltraficosv.com/newsite/"><img src="static/images/heroes.jpg" alt="Estadísticas" class="img-fluid rounded" width='500px'></a>
+
+            </section>
+        </div>
+    </div>
+</main>
+
 
 {% endblock %}
 
